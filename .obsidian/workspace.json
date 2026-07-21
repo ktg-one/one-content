@@ -249,6 +249,7 @@
   },
   "active": "33aa01e5cbf21ead",
   "lastOpenFiles": [
+    "skills-lock.json",
     "tests/__pycache__/test_content_refactoring_engine.cpython-314.pyc",
     "tests/test_content_refactoring_engine.py",
     "tests/__pycache__/test_image_generator.cpython-314.pyc",
@@ -270,7 +271,6 @@
     "docs/personas.md",
     "docs/workflows.md",
     "docs/architecture.md",
-    "docs",
     "outbox/master/sample_drop_refactored.md",
     "inbox/sample_drop.md",
     "drafts/03 Model Handbook 2026 - The Fabrication Threshold.md",

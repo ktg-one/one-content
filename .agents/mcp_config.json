@@ -4,15 +4,15 @@
       "command": "bunx",
       "args": ["-y", "composio-core", "mcp"],
       "env": {
-        "COMPOSIO_API_KEY": "${COMPOSIO_API_KEY}"
+        "COMPOSIO_API_KEY": "ak_wxKeosFsuiZaLinpU7zG"
       }
     },
     "n8n-api": {
       "command": "bunx",
-      "args": ["-y", "n8n-mcp"],
+      "args": ["-y", "n8n-mcp-server"],
       "env": {
-        "N8N_HOST": "${N8N_HOST}",
-        "N8N_API_KEY": "${N8N_API_KEY}"
+        "N8N_API_URL": "http://localhost:5678",
+        "N8N_API_KEY": "placeholder"
       }
     }
   }
