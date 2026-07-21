@@ -1,17 +1,17 @@
 {
   "mcpServers": {
     "composio": {
-      "command": "bunx",
+      "command": "npx",
       "args": ["-y", "composio-core", "mcp"],
       "env": {
         "COMPOSIO_API_KEY": "ak_wxKeosFsuiZaLinpU7zG"
       }
     },
     "n8n-api": {
-      "command": "bunx",
-      "args": ["-y", "n8n-mcp-server"],
+      "command": "npx",
+      "args": ["-y", "n8n-mcp"],
       "env": {
-        "N8N_API_URL": "http://localhost:5678",
+        "N8N_HOST": "http://localhost:5678",
         "N8N_API_KEY": "placeholder"
       }
     }
