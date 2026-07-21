@@ -1,0 +1,10 @@
+{
+  "sources": {
+    ".raw/ideate-52.txt": {
+      "hash": "87502d4d7be31def1655ad824d360644",
+      "ingested_at": "2026-07-17",
+      "pages_created": ["wiki/sources/ideate-52-2026-frontier-ai.md"],
+      "pages_updated": ["wiki/index.md", "wiki/log.md", "wiki/hot.md", "wiki/domains/blog-ktg/_index.md", "wiki/domains/model-handbook-series/_index.md"]
+    }
+  }
+}

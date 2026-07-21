@@ -1,0 +1,27 @@
+{
+  "title": "Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills",
+  "description": "Creating high-volume, high-quality technical content requires a systematic approach. By combining research synthesis tools like NotebookLM with structured...",
+  "seo_stats": {
+    "word_count": 188,
+    "h1_count": 0,
+    "h2_count": 4,
+    "overall_seo_score": 63,
+    "readability": "Needs Expansion"
+  },
+  "images": [
+    {
+      "id": "image_1",
+      "path": "outbox/assets/image_1_sample_drop.png",
+      "alt": "Visual representation of Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills",
+      "caption": "Key insight visual for Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills",
+      "prompt": "Conceptual illustration for Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills. Design Theme: Silicon Refined Ultra-Minimalist. Style: Ultra-minimalist, premium tech aesthetic, generous whitespace, precision typography. Color Palette: Matte Charcoal (#1D1D1F), Tech Blue (#0071E3), Pure White (#FFFFFF). Composition: Bento-style grid visual representing Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills, airy composition, clean product-focused high fidelity rendering.."
+    },
+    {
+      "id": "image_2",
+      "path": "outbox/assets/image_2_sample_drop.png",
+      "alt": "Deep dive illustration for Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills",
+      "caption": "Conceptual overview of core themes",
+      "prompt": "Technical architectural breakdown of Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills. Design Theme: Strategic Blue Tech-Forward. Style: Structured corporate design with light grey hexagonal geometric motifs and slate blue cards. Color Palette: Slate Blue (#264653), Ice Blue (#E9F5F8), Slate Grey (#64748B). Composition: Tech-forward business illustration representing Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills, hexagonal pattern overlay, crisp modern architectural grid.."
+    }
+  ]
+}

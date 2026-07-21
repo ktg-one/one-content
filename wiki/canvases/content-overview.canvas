@@ -1,0 +1,16 @@
+{
+  "nodes": [
+    {"id": "zone-nav-1752735301", "type": "group", "label": "Navigation", "x": -440, "y": -240, "width": 880, "height": 400, "color": "4"},
+    {"id": "zone-key-1752735302", "type": "group", "label": "Pipeline", "x": -440, "y": 220, "width": 880, "height": 400, "color": "6"},
+    {"id": "text-header-1752735303", "type": "text", "text": "# _content — Publication Pipeline\n\nModel Handbook series · Medium-ready articles · ktg.one blog · SCCD\n\nWiki layer scaffolded 2026-07-17. 12 root articles cataloged; drafts/ → posted/ flow.", "x": -440, "y": -400, "width": 880, "height": 120, "color": "3"},
+    {"id": "file-index-1752735304", "type": "file", "file": "wiki/index.md", "x": -420, "y": -200, "width": 380, "height": 140},
+    {"id": "file-hot-1752735305", "type": "file", "file": "wiki/hot.md", "x": 40, "y": -200, "width": 380, "height": 140},
+    {"id": "file-log-1752735306", "type": "file", "file": "wiki/log.md", "x": -420, "y": 0, "width": 380, "height": 140},
+    {"id": "file-overview-1752735307", "type": "file", "file": "wiki/overview.md", "x": 40, "y": 0, "width": 380, "height": 140},
+    {"id": "file-mh-1752735308", "type": "file", "file": "wiki/domains/model-handbook-series/_index.md", "x": -420, "y": 260, "width": 380, "height": 140},
+    {"id": "file-medium-1752735309", "type": "file", "file": "wiki/domains/medium-articles/_index.md", "x": 40, "y": 260, "width": 380, "height": 140},
+    {"id": "file-fabfrontier-1752735310", "type": "file", "file": "drafts/MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md", "x": -420, "y": 460, "width": 380, "height": 140},
+    {"id": "file-ghost-1752735311", "type": "file", "file": "wiki/sources/ideate-52-2026-frontier-ai.md", "x": 40, "y": 460, "width": 380, "height": 140}
+  ],
+  "edges": []
+}

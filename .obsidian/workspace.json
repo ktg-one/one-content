@@ -1,0 +1,282 @@
+{
+  "main": {
+    "id": "431f4600ae53ebf2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3aa735bdfee764ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "33aa01e5cbf21ead",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "drafts/The_Architecture_of_AI_Fabrication.png"
+              },
+              "icon": "lucide-image",
+              "title": "The_Architecture_of_AI_Fabrication"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74a43c4c715f18f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "ca72119c4b21fd8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14a083cb561431cc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "23639daad768f84f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1ef121447db52bc8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "f85baa641d242ec5",
+            "type": "leaf",
+            "state": {
+              "type": "writing-studio-launcher",
+              "state": {},
+              "icon": "feather",
+              "title": "Writing studio"
+            }
+          },
+          {
+            "id": "237faceea8c3400b",
+            "type": "leaf",
+            "state": {
+              "type": "notebook-navigator",
+              "state": {},
+              "icon": "notebook-navigator",
+              "title": "Notebook Navigator"
+            }
+          },
+          {
+            "id": "88be105f2b575810",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "18230a686c695fde",
+    "type": "split",
+    "children": [
+      {
+        "id": "887c29991884600c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02c4f66b2588252f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "drafts/The_Architecture_of_AI_Fabrication.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for The_Architecture_of_AI_Fabrication"
+            }
+          },
+          {
+            "id": "b7a67fa3aef084a8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "332d9d99febad876",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "976d8d3deb47b540",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a9d073c099423362",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "f78560d40877b1a4",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "4f81356238babeff",
+            "type": "leaf",
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 354.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "content-publisher:Publish to Substack": false,
+      "content-publisher:Publish to WordPress": false,
+      "content-publisher:Publish to LinkedIn": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "star-notebooklm:Send to NotebookLM": false,
+      "star-notebooklm:Open NotebookLM": false,
+      "grimoire:Open Grimoire": false,
+      "writing-studio:Open writing studio": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "agentfiles:Agentfiles": false,
+      "hermes-agent:Open Hermes Agent": false,
+      "hermes-agent:Open Hermes smart graph": false,
+      "publish-to-wordpress:Publish to WordPress": false,
+      "terminal:Open terminal": false
+    }
+  },
+  "active": "33aa01e5cbf21ead",
+  "lastOpenFiles": [
+    "docs/personas.md",
+    "docs/workflows.md",
+    "docs/architecture.md",
+    "docs",
+    "sccd/__pycache__/image_prompt_templates.cpython-314.pyc",
+    "sccd/__pycache__",
+    "sccd/image_prompt_templates.py",
+    "templates",
+    "outbox/master/sample_drop_meta.json",
+    "outbox/master/sample_drop_refactored.md",
+    "inbox/sample_drop.md",
+    "sccd/seo_refactor.py",
+    "outbox/reddit",
+    "outbox/x",
+    "outbox/meta",
+    "drafts/03 Model Handbook 2026 - The Fabrication Threshold.md",
+    "drafts/Claude-Code-When-Delegation-Became-A-Superpower.md",
+    "drafts/Claude-Code-The-Foreman-In-Both-Rooms.md",
+    "CLAUDE.md",
+    "wiki/canvases/home-dashboard.canvas",
+    "02 Model Handbook 2026 - The Honest Diagnostic.md",
+    "posted/02-Model-Handbook-2026 - Self-Assessment.md",
+    "posted/02 Model Handbook 2026 - The Honest Diagnostic.md",
+    "02-25-2026-QMDR-2026.md",
+    "02-Model-Handbook-2026 - Self-Assessment.md",
+    "03 Model Handbook 2026 - The Fabrication Threshold.md",
+    "POST-2-Technique-Honesty-Test.md",
+    "MEDIUM-READY-SCCD-TFAB-Operator-Model.md",
+    "MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md"
+  ]
+}

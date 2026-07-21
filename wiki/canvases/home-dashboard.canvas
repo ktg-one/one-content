@@ -1,0 +1,319 @@
+{
+  "nodes": [
+    {
+      "id": "zone-activity-1752830001",
+      "type": "group",
+      "x": -1400,
+      "y": -880,
+      "width": 1040,
+      "height": 900,
+      "label": "What Happened",
+      "color": "5"
+    },
+    {
+      "id": "zone-live-1752830007",
+      "type": "group",
+      "x": -280,
+      "y": -880,
+      "width": 1120,
+      "height": 420,
+      "label": "Live — posted/",
+      "color": "4"
+    },
+    {
+      "id": "zone-next-1752830011",
+      "type": "group",
+      "x": -280,
+      "y": -420,
+      "width": 1120,
+      "height": 400,
+      "label": "Ships Next",
+      "color": "1"
+    },
+    {
+      "id": "zone-wiki-1752830016",
+      "type": "group",
+      "x": -1400,
+      "y": 80,
+      "width": 2240,
+      "height": 640,
+      "label": "Wiki Navigation",
+      "color": "6"
+    },
+    {
+      "id": "title-home-1752830000",
+      "type": "text",
+      "x": -1400,
+      "y": -1080,
+      "width": 2240,
+      "height": 140,
+      "color": "6",
+      "text": "# _content Home Dashboard\nEverything that's happened in this vault. Wiki: [[wiki/index|Index]] · [[wiki/log|Log]] · [[wiki/hot|Hot]] — updated 2026-07-18"
+    },
+    {
+      "id": "act-0717a-1752830002",
+      "type": "text",
+      "x": -1380,
+      "y": -840,
+      "width": 480,
+      "height": 200,
+      "color": "5",
+      "text": "**2026-07-17 — Wiki born**\nwiki/ layer scaffolded: [[wiki/index|index]], [[wiki/log|log]], [[wiki/hot|hot]], 4 domains. 12 root articles catalogued."
+    },
+    {
+      "id": "act-0717b-1752830003",
+      "type": "text",
+      "x": -880,
+      "y": -840,
+      "width": 480,
+      "height": 200,
+      "color": "5",
+      "text": "**2026-07-17 — First ingest**\n[[ideate-52-2026-frontier-ai]] (ktg.one). Dupe quarantined. One unverified stat flagged for fact-check."
+    },
+    {
+      "id": "act-0718a-1752830004",
+      "type": "text",
+      "x": -1380,
+      "y": -600,
+      "width": 480,
+      "height": 200,
+      "color": "5",
+      "text": "**2026-07-18 — Dedup cull**\n9 byte-identical root mirrors deleted; canonical copies now in drafts/. Canvas file nodes repointed. Manifest created."
+    },
+    {
+      "id": "act-0718b-1752830005",
+      "type": "text",
+      "x": -880,
+      "y": -600,
+      "width": 480,
+      "height": 200,
+      "color": "1",
+      "text": "**2026-07-18 — FIRST PUBLISH**\nHonest Diagnostic shipped as two-part split. posted/ no longer empty. Series has its live anchor."
+    },
+    {
+      "id": "act-open-1752830006",
+      "type": "text",
+      "x": -1380,
+      "y": -360,
+      "width": 980,
+      "height": 340,
+      "color": "3",
+      "text": "> [!todo] Open loops\n> - LEGIO PDFs (2 × 21MB) uncatalogued — next ingest\n> - Qwen Max quote: corroboration unresolved\n> - Two \"reliability cliff\" framings not reconciled\n> - content-hub consolidation undecided\n> - drafts/ Honest Diagnostic = older version vs posted one — merge or archive?"
+    },
+    {
+      "id": "file-posted-diag-1752830008",
+      "type": "file",
+      "x": -260,
+      "y": -840,
+      "width": 520,
+      "height": 160,
+      "file": "posted/02 Model Handbook 2026 - The Honest Diagnostic.md"
+    },
+    {
+      "id": "file-posted-self-1752830009",
+      "type": "file",
+      "x": 300,
+      "y": -840,
+      "width": 520,
+      "height": 160,
+      "file": "posted/02-Model-Handbook-2026 - Self-Assessment.md"
+    },
+    {
+      "id": "live-note-1752830010",
+      "type": "text",
+      "x": -260,
+      "y": -640,
+      "width": 1080,
+      "height": 140,
+      "color": "4",
+      "text": "**Two-part split, both live 2026-07-18.** Part 1 status: posted (frontmatter). Part 2 = split-out second half."
+    },
+    {
+      "id": "file-next-fab-1752830012",
+      "type": "file",
+      "x": -260,
+      "y": -380,
+      "width": 520,
+      "height": 160,
+      "file": "drafts/MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md"
+    },
+    {
+      "id": "file-next-sccd-1752830013",
+      "type": "file",
+      "x": 300,
+      "y": -380,
+      "width": 520,
+      "height": 160,
+      "file": "drafts/MEDIUM-READY-SCCD-TFAB-Operator-Model.md"
+    },
+    {
+      "id": "file-next-post2-1752830014",
+      "type": "file",
+      "x": -260,
+      "y": -200,
+      "width": 520,
+      "height": 160,
+      "file": "drafts/POST-2-Technique-Honesty-Test.md"
+    },
+    {
+      "id": "next-note-1752830015",
+      "type": "text",
+      "x": 300,
+      "y": -200,
+      "width": 520,
+      "height": 160,
+      "color": "1",
+      "text": "**Order:** Fabrication Frontier first (packaging done) → SCCD (depends_on) → POST-2 (owes 2 table PNGs)."
+    },
+    {
+      "id": "file-nav-index-1752830017",
+      "type": "file",
+      "x": -1380,
+      "y": 120,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/index.md"
+    },
+    {
+      "id": "file-nav-log-1752830018",
+      "type": "file",
+      "x": -920,
+      "y": 120,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/log.md"
+    },
+    {
+      "id": "file-nav-hot-1752830019",
+      "type": "file",
+      "x": -460,
+      "y": 120,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/hot.md"
+    },
+    {
+      "id": "file-nav-overview-1752830020",
+      "type": "file",
+      "x": 0,
+      "y": 120,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/overview.md"
+    },
+    {
+      "id": "file-nav-mh-1752830021",
+      "type": "file",
+      "x": -1380,
+      "y": 300,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/domains/model-handbook-series/_index.md"
+    },
+    {
+      "id": "file-nav-medium-1752830022",
+      "type": "file",
+      "x": -920,
+      "y": 300,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/domains/medium-articles/_index.md"
+    },
+    {
+      "id": "file-nav-ktg-1752830023",
+      "type": "file",
+      "x": -460,
+      "y": 300,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/domains/blog-ktg/_index.md"
+    },
+    {
+      "id": "file-nav-sccd-1752830024",
+      "type": "file",
+      "x": 0,
+      "y": 300,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/domains/sccd/_index.md"
+    },
+    {
+      "id": "file-nav-source-1752830025",
+      "type": "file",
+      "x": -1380,
+      "y": 480,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/sources/ideate-52-2026-frontier-ai.md"
+    },
+    {
+      "id": "file-nav-pipeline-1752830026",
+      "type": "file",
+      "x": -920,
+      "y": 480,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/canvases/publish-pipeline.canvas"
+    },
+    {
+      "id": "file-nav-content-1752830027",
+      "type": "file",
+      "x": -460,
+      "y": 480,
+      "width": 420,
+      "height": 140,
+      "file": "wiki/canvases/content-overview.canvas"
+    },
+    {
+      "id": "file-nav-claude-1752830028",
+      "type": "file",
+      "x": 0,
+      "y": 480,
+      "width": 420,
+      "height": 140,
+      "file": "CLAUDE.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-pub-live-1752830030",
+      "fromNode": "act-0718b-1752830005",
+      "fromSide": "right",
+      "toNode": "file-posted-diag-1752830008",
+      "toSide": "left",
+      "label": "shipped"
+    },
+    {
+      "id": "e-diag-self-1752830031",
+      "fromNode": "file-posted-diag-1752830008",
+      "fromSide": "right",
+      "toNode": "file-posted-self-1752830009",
+      "toSide": "left",
+      "label": "part 2"
+    },
+    {
+      "id": "e-live-next-1752830032",
+      "fromNode": "zone-live-1752830007",
+      "fromSide": "bottom",
+      "toNode": "zone-next-1752830011",
+      "toSide": "top",
+      "label": "pipeline continues"
+    },
+    {
+      "id": "e-fab-sccd-1752830033",
+      "fromNode": "file-next-fab-1752830012",
+      "fromSide": "right",
+      "toNode": "file-next-sccd-1752830013",
+      "toSide": "left",
+      "label": "unblocks"
+    },
+    {
+      "id": "e-cull-drafts-1752830034",
+      "fromNode": "act-0718a-1752830004",
+      "fromSide": "bottom",
+      "toNode": "act-open-1752830006",
+      "toSide": "top",
+      "label": "leaves open"
+    }
+  ]
+}

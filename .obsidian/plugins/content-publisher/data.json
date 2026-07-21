@@ -1,0 +1,46 @@
+{
+  "devMode": true,
+  "logLevel": 3,
+  "substackCookie": "",
+  "publications": [],
+  "defaultPublication": "",
+  "sections": [],
+  "defaultSectionId": null,
+  "defaultAudience": "everyone",
+  "defaultTags": [],
+  "paidSubscribersEnabled": false,
+  "defaultAddWordPressLink": true,
+  "wordpressEnabled": true,
+  "wordpressBaseUrl": "",
+  "wordpressUsername": "",
+  "wordpressPassword": "",
+  "wordpressCategoryPageIds": {},
+  "wordpressDefaultCategory": "",
+  "wordpressServers": [
+    {
+      "id": "server-1784053904319",
+      "name": "ktg.one",
+      "baseUrl": "https:\\\\ktg.one",
+      "username": "ktgblog",
+      "password": "tfDR zh6m Arml ha9m Zlia TwH0",
+      "categoryPageIds": {
+        "ai-research": 13,
+        "ai-update": 14,
+        "ai-anthropology": 32,
+        "prompt-engineering": 33,
+        "tools-resources": 34,
+        "uncategorised": 1
+      },
+      "defaultCategory": "AI-research",
+      "polylang": {
+        "enabled": false,
+        "categoryMapping": {}
+      }
+    }
+  ],
+  "wordpressDefaultServerId": "",
+  "linkedinEnabled": true,
+  "linkedinAccessToken": "",
+  "linkedinPersonId": "",
+  "linkedinDefaultVisibility": "PUBLIC"
+}

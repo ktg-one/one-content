@@ -1,0 +1,6 @@
+{
+  "enabledPlugins": {
+    "claude-obsidian@agricidaniel-claude-obsidian": true,
+    "claude-canvas@canvas-local": true
+  }
+}

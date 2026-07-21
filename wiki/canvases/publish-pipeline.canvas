@@ -1,0 +1,33 @@
+{
+	"nodes": [
+		{"id": "group-flow", "type": "group", "x": -1400, "y": -660, "width": 920, "height": 760, "label": "Flow", "color": "5"},
+		{"id": "group-ready", "type": "group", "x": -320, "y": -660, "width": 1240, "height": 760, "label": "Ready to Ship", "color": "4"},
+		{"id": "group-series", "type": "group", "x": -1400, "y": 220, "width": 1240, "height": 780, "label": "Series Map — Model Handbook 2026", "color": "3"},
+		{"id": "group-next", "type": "group", "x": -40, "y": 220, "width": 960, "height": 780, "label": "Next Action", "color": "1"},
+		{"id": "title", "type": "text", "x": -1400, "y": -1080, "width": 2320, "height": 140, "color": "6", "text": "# KTG Publish Pipeline\nGood AI / KTG content vault `_content` — .raw clip → ingest → draft → MEDIUM-READY → posted. State as of 2026-07-17: 12 articles catalogued, 2 medium-ready, 1 ready-full, **posted/ empty**."},
+		{"id": "flow-mermaid", "type": "text", "x": -1360, "y": -600, "width": 840, "height": 460, "text": "```mermaid\nflowchart TD\n    RAW[\".raw/ source clips (immutable)\"] --> ING[\"ingest → wiki/sources + index\"]\n    ING --> DR[\"drafts/ — 12 catalogued, 6 series pieces still draft\"]\n    DR --> GATE{\"review gate: packaging + fact-check\"}\n    GATE -->|pass| MR[\"MEDIUM-READY-* — 2 packaged, 1 ready-full\"]\n    GATE -->|rework| DR\n    MR --> POST[\"posted/ — EMPTY, nothing live yet\"]\n```"},
+		{"id": "flow-note", "type": "text", "x": -1360, "y": -100, "width": 840, "height": 160, "text": "**Pipeline reality check:** packaging is running ahead of drafting — two `medium-ready` pieces exist while several source drafts are still rough. Root files are mirrored under `drafts/` (~Jul 13 timestamps); `posted/` is empty, so everything is pre-publish."},
+		{"id": "file-fab", "type": "file", "x": -280, "y": -600, "width": 560, "height": 180, "file": "drafts/MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md"},
+		{"id": "status-fab", "type": "text", "x": 320, "y": -600, "width": 560, "height": 180, "color": "4", "text": "**status: medium-ready**\n\"The Silicon Oracle Has a Broken Fuel Gauge\" — ~2400 words, 9–11 min. Packaging complete: A/B titles, tags, canonical URL to ktg.one. Repackages the 02/03 drafts."},
+		{"id": "file-sccd", "type": "file", "x": -280, "y": -380, "width": 560, "height": 180, "file": "drafts/MEDIUM-READY-SCCD-TFAB-Operator-Model.md"},
+		{"id": "status-sccd", "type": "text", "x": 320, "y": -380, "width": 560, "height": 180, "color": "4", "text": "**status: medium-ready**\n\"SCCD: A Decision Model That Stops the Lie Before It Ships\" — Part 2, 8–10 min. `depends_on:` Silicon Oracle, so it ships second. `sccd_tfab.py` implementation already working."},
+		{"id": "file-post2", "type": "file", "x": -280, "y": -160, "width": 560, "height": 180, "file": "drafts/POST-2-Technique-Honesty-Test.md"},
+		{"id": "status-post2", "type": "text", "x": 320, "y": -160, "width": 560, "height": 180, "color": "4", "text": "**status: ready-full**\n\"The Technique Honesty Test\" — Post 2, source voice kept (\"no rebrand, no medium diet\"). Multi-image: hero + 4 slots mapped, two tables still need PNG export."},
+		{"id": "s-diag", "type": "text", "x": -1360, "y": 280, "width": 560, "height": 200, "color": "3", "text": "**02 — The Honest Diagnostic**\n`status: draft` (frontmatter). Core diagnostic essay; feeds the Fabrication Frontier package and lends its voice to POST-2."},
+		{"id": "s-selfassess", "type": "text", "x": -760, "y": 280, "width": 560, "height": 200, "color": "3", "text": "**02 — Self-Assessment**\ndraft — no frontmatter, unpolished running prose. Holds the Qwen Max \"linear autoregressive transformer\" quote; corroboration vs ktg.one source still open."},
+		{"id": "s-threshold", "type": "text", "x": -1360, "y": 520, "width": 560, "height": 200, "color": "3", "text": "**03 — The Fabrication Threshold**\ndraft — no `status` field; starts mid-sequence (\"## 2.\"), reads as excerpt/fragment. Source draft for the medium-ready Fabrication Frontier."},
+		{"id": "s-logic", "type": "text", "x": -760, "y": 520, "width": 560, "height": 200, "color": "3", "text": "**03 — Transparency Logic**\ndraft — no `status` field; still contains a raw python scratch block. Third source draft folded into the Fabrication Frontier package."},
+		{"id": "s-mbti", "type": "text", "x": -1360, "y": 760, "width": 560, "height": 200, "color": "3", "text": "**04 — The MBTI LLM's Personality**\ndraft — no frontmatter, test-list format, unfinished feel. Furthest from ship in the series."},
+		{"id": "s-pique", "type": "text", "x": -760, "y": 760, "width": 560, "height": 200, "color": "3", "text": "**4. The PIQUE Test**\ndraft — \"10 Tests That Expose How Well You Understand Your Model\". Terse companion/appendix to the 04 MBTI doc; ships with it or folds in."},
+		{"id": "next-callout", "type": "text", "x": 0, "y": 280, "width": 880, "height": 480, "color": "1", "text": "> [!todo] Pick ONE and ship\n> **Strongest candidate: `MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md`**\n>\n> Why this one:\n> - Only piece with packaging 100% done — A/B titles, subtitle, tags, read-time, canonical URL\n> - `posted/` is empty; the whole series needs a live anchor\n> - SCCD Part 2 declares `depends_on` this piece — shipping it unblocks the next publish\n> - POST-2 is close behind but still owes 2 table→PNG exports\n>\n> **Do:** final read-through → publish to Medium + ktg.one → move file to `posted/` → log it in `wiki/log.md`."}
+	],
+	"edges": [
+		{"id": "e-flow-fab", "fromNode": "flow-mermaid", "fromSide": "right", "toNode": "file-fab", "toSide": "left", "label": "gate passed"},
+		{"id": "e-diag-fab", "fromNode": "s-diag", "fromSide": "top", "toNode": "file-fab", "toSide": "bottom", "label": "source draft"},
+		{"id": "e-threshold-fab", "fromNode": "s-threshold", "fromSide": "right", "toNode": "file-fab", "toSide": "bottom", "label": "source draft"},
+		{"id": "e-logic-fab", "fromNode": "s-logic", "fromSide": "right", "toNode": "file-fab", "toSide": "bottom", "label": "source draft"},
+		{"id": "e-diag-post2", "fromNode": "s-diag", "fromSide": "right", "toNode": "file-post2", "toSide": "left", "label": "voice source"},
+		{"id": "e-fab-sccd", "fromNode": "file-fab", "fromSide": "bottom", "toNode": "file-sccd", "toSide": "top", "label": "unblocks (depends_on)"},
+		{"id": "e-fab-next", "fromNode": "file-fab", "fromSide": "right", "toNode": "next-callout", "toSide": "top", "label": "SHIP FIRST"}
+	]
+}
