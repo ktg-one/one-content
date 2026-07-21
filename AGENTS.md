@@ -5,22 +5,41 @@ This file provides guidance to Codex / Antigravity when working with code and co
 # _content: LLM Wiki & One-Shot Content Engine
 
 Mode: Content pipeline & One-Shot Refactoring Engine
-Purpose: Good AI / KTG publication pipeline — NotebookLM drops, Medium, ktg.one blog, and multi-channel social distribution (Reddit, LinkedIn, X, Meta) via Composio.
+Purpose: Good AI / KTG publication pipeline — NotebookLM drops, Medium, ktg.one blog, and multi-channel social distribution (Reddit, LinkedIn, X, Meta) via Composio & n8n.
 Owner: Kev
 Created: 2026-07-17
 Updated: 2026-07-21
 
 ---
 
-## Session start (do this first)
+## 🔒 Master Skill Rule
 
-1. Read `wiki\hot.md` — recent context cache (~500 words).
-2. Then `wiki\index.md` — root articles cataloged with status (draft / ready / medium-ready).
-3. Read [`docs/architecture.md`](file:///C:/Users/kevin/Documents/_content/docs/architecture.md) & [`docs/workflows.md`](file:///C:/Users/kevin/Documents/_content/docs/workflows.md) for Content Engine operations.
+> **CRITICAL RULE:** A workflow is ONLY packaged into a `SKILL.md` AFTER it has been executed and empirically verified as a 100% success. Premature or unverified skills are strictly forbidden.
 
 ---
 
-## Structure
+## Session start (do this first on every fresh session)
+
+1. Read `wiki\hot.md` — recent context cache & active draft status.
+2. Read `wiki\index.md` — root cataloged articles with status.
+3. Read [`docs/architecture.md`](file:///C:/Users/kevin/Documents/_content/docs/architecture.md), [`docs/workflows.md`](file:///C:/Users/kevin/Documents/_content/docs/workflows.md), [`docs/personas.md`](file:///C:/Users/kevin/Documents/_content/docs/personas.md), and [`docs/ideation_roadmap.md`](file:///C:/Users/kevin/Documents/_content/docs/ideation_roadmap.md).
+
+---
+
+## Workspace Subsystems & Active Connectors
+
+1. **Codebase Memory & Intelligence:** Powered by `codebase-memory-mcp` (DeusData - `codebase-memory-mcp --ui=true --port=9749`) and `@modelcontextprotocol/server-memory`.
+2. **SEO Analysis & Refactoring:** Executed via `sccd/seo_refactor.py` and `.agents/skills/seo-analyzer/SKILL.md`.
+3. **AI Image Generator:** GitHub `notebooklm-prompt-styles` templates (`sccd/image_prompt_templates.py`) + `generate_image` tool $\rightarrow$ `outbox/assets/`.
+4. **Persona Outboxes:** Strict **Author Voice Preservation** for Reddit (`outbox/reddit/`), LinkedIn (`outbox/linkedin/`), X Thread (`outbox/x/`), and Meta (`outbox/meta/`).
+5. **Google Workspace Automation:** CLI tool `gws` (v0.22.5) installed; skill located in `.agents/skills/google-workspace-cli/SKILL.md`. *(Strictly isolated to personal account workflows; never run against work accounts)*.
+6. **Composio MCP Server:** Configured in `.agents/mcp_config.json` via `@composio/mcp@latest` with key `ak_wx...`.
+7. **n8n Automation Engine:** Configured in `.agents/mcp_config.json` via `n8n-mcp` (40+ tools API server).
+8. **Cloud Deployment CLI:** Railway CLI (v5.27.1) installed.
+
+---
+
+## Repository Structure
 
 ```
 _content/
@@ -29,56 +48,20 @@ _content/
 ├── .raw/          # source clips, immutable ingest inbox (dupes quarantined in .raw/_dupes/)
 ├── drafts/        # work in progress
 ├── posted/        # published pieces
-├── sccd/          # SCCD framework + seo_refactor.py + image_prompt_templates.py
-├── .agents/       # Personas, One-Shot Skills, and Composio mcp_config.json
-├── docs/          # Architecture, Workflows, and Persona specifications
-└── wiki/          # Knowledge layer & catalog
+├── sccd/          # SCCD framework + seo_refactor.py + image_prompt_templates.py + retrieve_details.py
+├── .agents/       # Personas, Skills (seo-analyzer, image-generator, content-refactoring-engine, find-skills, google-workspace-cli), and mcp_config.json
+├── docs/          # Architecture, Workflows, Personas, and Ideation Roadmap
+├── tests/         # Python unittest suite (python -m unittest discover tests)
+└── wiki/          # Knowledge layer & catalog (index.md, hot.md)
 ```
 
-Not a git repo. `.env` sits in root — never read into output or copy elsewhere.
+`.env` sits in workspace root — never read into output or copy elsewhere.
 
 ---
 
-## Content Refactoring Operations
-
-1. **Inbox Drops**: Place raw NotebookLM notes or drafts in `inbox/`.
-2. **Refactor Execution**:
-   ```bash
-   python sccd/seo_refactor.py inbox/<drop-filename>.md
-   ```
-3. **Image Prompts**: Generated using GitHub `notebooklm-prompt-styles` templates (`sccd/image_prompt_templates.py`).
-4. **Outbox Transformations**:
-   - `outbox/master/`: Refactored master article & metadata.
-   - `outbox/assets/`: Generated images (`image_1_<slug>.png`, `image_2_<slug>.png`).
-   - `outbox/reddit/`: 250-500 words, authentic community starter.
-   - `outbox/linkedin/`: 150-300 words, single-line spacing, bulleted key takeaways.
-   - `outbox/x/`: Numbered thread (<280 chars per tweet).
-   - `outbox/meta/`: 150-300 words visual story.
-
----
-
-## Writing Rules
+## Writing & Execution Rules
 
 - **Author Voice:** PRESERVE AUTHOR VOICE VERBATIM. Repurpose and package — **never rewrite the author's voice**.
 - **No Medium length culls.**
-- **ARQ discipline:** stop → step back → holistic original prompt → align → continue (`ARQ-WRITING-KTG.md`).
-
----
-
-## Conventions
-
-- All notes use YAML frontmatter: type, status, created, updated, tags (minimum)
-- Wikilinks use `[[Note Name]]` format — filenames unique, no paths
-- `.raw/` never modified
-- `wiki/index.md` updated on every ingest
-- `wiki/log.md` append-only, new entries at TOP
-- Publish-status changes (draft → posted) get logged in `wiki/log.md`
-
----
-
-## Operations & Lint Policy
-
-- Ingest: drop source in `.raw/`, say "ingest [filename]"
-- Refactor: drop NotebookLM draft in `inbox/`, say "refactor inbox drop [filename]"
-- Lint: "lint the wiki"
-- Dedup cull: byte-identical `.raw` sources quarantined in `.raw/_dupes/`
+- **No Guessing:** Never guess code logic, schemas, or CLI flags. Always look them up first.
+- **YOLO / Autonomous Mode:** When given a post or command, execute end-to-end without mid-process pauses or confirmation prompts.

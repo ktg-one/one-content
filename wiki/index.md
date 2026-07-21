@@ -1,48 +1,26 @@
----
-type: index
-created: 2026-07-17
----
+# Master Content Index
+*Updated: 2026-07-21 17:54*
 
-# Wiki Index
-
-Master catalog for the Good AI / KTG content vault. See [[wiki/overview|Overview]] for layout, [[wiki/hot|Hot]] for recent context, [[wiki/log|Log]] for ingestion history.
-
-## Domains
-
-- [[wiki/domains/model-handbook-series/_index|model-handbook-series]]
-- [[wiki/domains/medium-articles/_index|medium-articles]]
-- [[wiki/domains/blog-ktg/_index|blog-ktg]]
-- [[wiki/domains/sccd/_index|sccd]]
-
-## Sources
-
-- [[wiki/sources/ideate-52-2026-frontier-ai|2026 Frontier AI: What the Labs Don't Tell You]] — ktg.one, published 2026-03-12, ingested 2026-07-17. Dupe quarantined at `.raw/_dupes/ideate-42-DUPE-of-52.txt`.
-
-## Root article catalog
-
-Status is a **guess** derived from frontmatter `status:` field where present, else inferred from polish level / presence of packaging metadata. Canonical copies live under `drafts/` — 9 byte-identical root mirrors deleted in the 2026-07-18 dedup cull (see [[wiki/log|Log]]); only `02 Model Handbook 2026 - The Honest Diagnostic.md` and `02-25-2026-QMDR-2026.md` still have a differing root version.
-
-| File | Domain | Status (guess) | Basis |
-|---|---|---|---|
-| `posted/02 Model Handbook 2026 - The Honest Diagnostic.md` | model-handbook-series | **posted** | Kev confirmed shipped 2026-07-18 (two-part split, part 1); older draft version remains in `drafts/` |
-| `posted/02-Model-Handbook-2026 - Self-Assessment.md` | model-handbook-series | **posted** | Kev confirmed shipped 2026-07-18 (split-out part 2) |
-| `03 Model Handbook 2026 - The Fabrication Threshold.md` | model-handbook-series | **draft** | frontmatter has `word-count`/`modified` only, no `status`; starts mid-sequence ("## 2.") suggesting an excerpt/fragment |
-| `03 Model Handbook 2026 - Transparency Logic.md` | model-handbook-series | **draft** | frontmatter has `word-count`/`modified` only, no `status`; contains raw python scratch block |
-| `04 Model Handbook 2026 - The MBTI LLM's Personality.md` | model-handbook-series | **draft** | no frontmatter, test-list format, unfinished feel |
-| `4. THE PIQUE TEST — 10 Tests That Expose How Well You Understand Your Model.md` | model-handbook-series | **draft** | no frontmatter; terse companion/appendix to MBTI doc |
-| `POST-2-Technique-Honesty-Test.md` | model-handbook-series | **ready-full** | frontmatter `status: ready-full` |
-| `MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md` | medium-articles (repackages model-handbook-series) | **medium-ready** | frontmatter `status: medium-ready` |
-| `MEDIUM-READY-SCCD-TFAB-Operator-Model.md` | medium-articles (repackages sccd) | **medium-ready** | frontmatter `status: medium-ready` |
-| `ARQ-WRITING-KTG.md` | blog-ktg | **draft / notes** | no frontmatter; internal framework notes, terse |
-| `RMDRE-IMBUEDv15-2026.md` | tool/prompt (no content domain) | **reference** | no frontmatter; persona/system-prompt template ("Recursive Master Deep Research Engine"), not a publishable article |
-| `02-25-2026-QMDR-2026.md` | tool/prompt (no content domain) | **reference** | no frontmatter; system-prompt template ("Search-Augmented Strategic Inquiry Engine"), not a publishable article |
-
-Not deep-catalogued this pass (flagged for future ingestion): `blog-LEGIO_Sovereign_Command.pdf`, `blog-LEGIO_Tactical_Execution.pdf` (see [[wiki/domains/blog-ktg/_index|blog-ktg]]).
-
-`posted/` folder: **2 live** (2026-07-18) — Honest Diagnostic two-part split. Rest of series pre-publish.
-
-## Counts
-
-- Root/drafts articles catalogued: 12 (7 model-handbook-series, 2 medium-articles, 1 blog-ktg, 2 tool/reference)
-- Domains created: 4
-- Sources ingested: 1 (1 dupe quarantined, not separately ingested)
+| File | Title | Category | Words | Last Modified |
+| :--- | :--- | :--- | :--- | :--- |
+| `02 Model Handbook 2026 - The Honest Diagnostic.md` | **02 Model Handbook 2026   The Honest Diagnostic** | `draft` | 3915 | 2026-07-13 15:36 |
+| `02-25-2026-QMDR-2026.md` | **02 25 2026 Qmdr 2026** | `draft` | 292 | 2026-07-17 07:39 |
+| `03 Model Handbook 2026 - The Fabrication Threshold.md` | **03 Model Handbook 2026   The Fabrication Threshold** | `draft` | 1377 | 2026-07-21 04:46 |
+| `03 Model Handbook 2026 - Transparency Logic.md` | **How We Do This** | `draft` | 2971 | 2026-07-13 15:36 |
+| `04 Model Handbook 2026 - The MBTI LLM's Personality.md` | **04 Model Handbook 2026   The Mbti Llm'S Personality** | `draft` | 757 | 2026-07-13 15:36 |
+| `4. THE PIQUE TEST — 10 Tests That Expose How Well You Understand Your Model.md` | **4. The Pique Test — 10 Tests That Expose How Well You Understand Your Model** | `draft` | 174 | 2026-07-13 15:36 |
+| `AGENTS.md` | **ktg-one-blog content workspace** | `draft` | 69 | 2026-07-13 15:42 |
+| `ARQ-WRITING-KTG.md` | **ARQ — realigned (ktg)** | `draft` | 501 | 2026-07-13 15:36 |
+| `Claude-Code-When-Delegation-Became-A-Superpower.md` | **Claude Code: When Delegation Became a Superpower** | `draft` | 4441 | 2026-07-21 06:04 |
+| `Claude-Opus-4.8-The-Introspective-Nervous-Intern.md` | **Claude Opus 4.8: The Introspective Nervous Intern** | `draft` | 2806 | 2026-07-20 15:39 |
+| `FUNCTION-LIBRARY-LEGIO.md` | **Function Library — LEGIO** | `draft` | 1225 | 2026-07-18 02:53 |
+| `MEDIUM-READY-Model-Handbook-2026-The-Fabrication-Frontier.md` | **MEDIUM PACKAGING** | `draft` | 3190 | 2026-07-13 15:36 |
+| `MEDIUM-READY-SCCD-TFAB-Operator-Model.md` | **Packaging** | `draft` | 2096 | 2026-07-13 15:36 |
+| `MQL-prerequisites.md` | **MQL - THE VISIBLE AREAS NOT READY** | `draft` | 1226 | 2026-07-20 14:34 |
+| `POST-2-Technique-Honesty-Test.md` | **IMAGE MAP** | `draft` | 2840 | 2026-07-13 15:36 |
+| `README.md` | **drop/ — the intake folder** | `draft` | 123 | 2026-07-13 15:36 |
+| `RMDRE-IMBUEDv15-2026.md` | **Name: Recursive Master Deep Research Engine** | `draft` | 1425 | 2026-07-13 15:36 |
+| `claude_code_delegation.md` | **Claude Code: When Delegation Became a Superpower** | `inbox_drop` | 4441 | 2026-07-21 06:04 |
+| `sample_drop.md` | **Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills** | `inbox_drop` | 216 | 2026-07-21 16:53 |
+| `claude_code_delegation_refactored.md` | **Claude Code: When Delegation Became a Superpower** | `master_outbox` | 4510 | 2026-07-21 17:14 |
+| `sample_drop_refactored.md` | **Building Modern AI Content Pipelines with NotebookLM and One-Shot Skills** | `master_outbox` | 291 | 2026-07-21 16:58 |
