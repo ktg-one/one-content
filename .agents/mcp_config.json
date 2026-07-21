@@ -1,8 +1,12 @@
 {
   "mcpServers": {
+    "codebase-memory": {
+      "command": "codebase-memory-mcp",
+      "args": ["--ui=true", "--port=9749"]
+    },
     "composio": {
       "command": "npx",
-      "args": ["-y", "composio-core", "mcp"],
+      "args": ["-y", "@composio/mcp@latest", "start"],
       "env": {
         "COMPOSIO_API_KEY": "ak_wxKeosFsuiZaLinpU7zG"
       }
