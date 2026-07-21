@@ -1,10 +1,16 @@
-# Workflows Runbook: Content Refactoring Engine
+# Workflows Runbook: Content & Cloud Infrastructure Engine
 
-This runbook guides you through running the **Content Refactoring Engine** to turn NotebookLM drops into multi-channel published posts.
+This runbook guides you through operating the **Content Refactoring Engine** and setting up cloud infrastructure (Railway, n8n, Composio).
 
 ---
 
-## 1. Standard One-Shot Workflow
+## 🔒 Master Skill Rule
+
+> **CRITICAL RULE:** A workflow is ONLY packaged into a `SKILL.md` AFTER it has been executed and empirically verified as a 100% success. Premature or unverified skills are strictly forbidden.
+
+---
+
+## 1. Content Refactoring Workflow (Verified)
 
 ### Step 1: Drop Raw NotebookLM Content into `inbox/`
 Export your research notes, podcast transcript summary, or draft post from NotebookLM into a markdown or text file inside `inbox/`:
@@ -13,10 +19,7 @@ inbox/my_notebook_drop.md
 ```
 
 ### Step 2: Trigger the Engine
-Tell the agent in chat:
-> *"Refactor inbox drop my_notebook_drop.md"*
-
-Or run the refactoring command manually:
+Run the refactoring command:
 ```bash
 python sccd/seo_refactor.py inbox/my_notebook_drop.md
 ```
@@ -25,23 +28,38 @@ python sccd/seo_refactor.py inbox/my_notebook_drop.md
 The engine automatically:
 1. Performs SEO readability and structure scoring.
 2. Selects 2 visual anchor points in the article.
-3. Generates 2 visual image assets into `outbox/assets/` using GitHub NotebookLM prompt templates.
-4. Generates persona-tailored outbox posts into `outbox/reddit/`, `outbox/linkedin/`, `outbox/x/`, and `outbox/meta/`.
-
-### Step 4: Composio Distribution
-With Composio MCP configured, trigger direct posting or scheduling to your target platforms:
-```bash
-npx -y composio-core execute ...
-```
+3. Generates 2 visual image assets into `outbox/assets/` using GitHub NotebookLM prompt templates (*Silicon Refined*, *Strategic Blue*).
+4. Generates persona-tailored outbox posts into `outbox/reddit/`, `outbox/linkedin/`, `outbox/x/`, and `outbox/meta/` preserving author voice verbatim.
 
 ---
 
-## 2. Testing & Diagnostics
+## 2. Cloud Setup Workflows (In Progress)
 
-To verify the SEO refactoring script and prompt templates manually:
+### A. Railway CLI Login & Deployment
 ```bash
-python sccd/seo_refactor.py inbox/sample_drop.md
+# 1. Login to Railway
+railway login
+
+# 2. Link or initialize project
+railway init
+
+# 3. Deploy n8n instance
+railway up
 ```
-Output files created:
-- `outbox/master/sample_drop_refactored.md`
-- `outbox/master/sample_drop_meta.json`
+
+### B. n8n Instance & Google OAuth Setup
+1. Deploy n8n on Railway or start local instance (`http://localhost:5678`).
+2. Generate API key in n8n (Settings $\rightarrow$ API).
+3. Update `.env` with `N8N_API_URL` and `N8N_API_KEY`.
+4. Configure Google OAuth credential inside n8n dashboard for Drive, Docs, Gmail, and Calendar.
+
+### C. Composio MCP Integration
+- Configuration active in [`.agents/mcp_config.json`](file:///C:/Users/kevin/Documents/_content/.agents/mcp_config.json) using `@composio/mcp@latest`.
+- Connects outbox posts directly to Reddit, LinkedIn, X, and Meta APIs.
+
+---
+
+## 3. Verification & Skill Packaging
+
+- Once Railway deployment or n8n workflow runs successfully, verify the live endpoint/execution.
+- **Packaging:** Author the corresponding `SKILL.md` in `.agents/skills/` ONLY after empirical verification.
