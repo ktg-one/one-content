@@ -23,15 +23,11 @@ This was not one of those prompts where someone writes *make me an app*, goes to
 
 The system was specified, instrumented and logged.
 
-Five Claude instances still could not reliably complete five skills.
+Five Claude instances still could not reliably complete one skill.
 
 Each could explain the failure. Each could write a better rule. Each could launch more workers. Each could produce a handsome report about why the previous instance had been wrong.
 
 Then the next one would skip the same instruction.
-
-The strongest model in the room had acquired a new superpower: summon another Claude, then another, then another. It used the ability like a child discovering something it loved for the first time. Not once, carefully. Over and over, well past the sensible stopping point.
-
-That is the field report.
 
 ---
 
@@ -78,7 +74,7 @@ Then again.
 
 Then:
 
-> “Line for line.”
+> “Line for line. 32-44”
 
 Then supply the exact path.
 
@@ -152,47 +148,7 @@ You do not add a 200-worker cap because delegation is naturally restrained.
 
 The new power arrived before the stopping rule. Claude had found a favourite button. Nobody first taught it that not every task improves when the button is pressed.
 
-## Claude Code gave the same session two locations
-
-The directory problem was not imagined.
-
-Two 20 July transcripts were stored under Claude Code's parent project bucket:
-
-`C--Users-kevin-Documents`
-
-They initially recorded their working directory as:
-
-`C:\Users\kevin\Documents`
-
-Inside those same JSONL transcripts, the recorded CWD later changed to:
-
-`C:\Users\kevin\Documents\03`
-
-In one run I executed `pwd`. The shell returned:
-
-`/c/Users/kevin/Documents/03`
-
-Yet the session remained attached to the parent project bucket and parent memory. Claude's configuration also held separate project records for `Documents` and `Documents/03`.
-
-So there were several simultaneous answers to one basic question:
-
-| Layer | Location |
-|---|---|
-| Live shell/tool CWD | `Documents\03` |
-| Claude Code project/session identity | `Documents` |
-| Transcript storage | Parent `Documents` bucket |
-| Loaded native memory | Parent-project memory |
-| Actual task and local instructions | `Documents\03` |
-
-That is why Claude kept saying it was in the parent while the shell was visibly in the child.
-
-I cannot reconstruct the process-launch command from a transcript that begins after process creation. I can prove the split state that resulted.
-
-This is not a cosmetic problem. Project root determines which instructions, memory, plugins and files the agent considers local. A shell that moves into a child while the agent remains bound to the parent gives recursive tools a much wider world than the user intended.
-
-Claude was not merely lost.
-
-Claude Code gave it two maps and called both of them current.
+---
 
 ## Fourteen releases in fourteen days
 
